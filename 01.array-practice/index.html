@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array List with Practice JS Daily</title>
+</head>
+<body>
+    <h1>Array List Project</h1>
+    <script>
+        const inventors = [
+            { first: 'Amster', last: 'Forza', year: '1988'},
+            { first: 'Dollar', last: 'Same', year: '1984'},
+            { first: 'Bill', last: 'Quinn', year: '1991'}
+        ];
+        
+        const people = ['Beck, Dollar', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 'Black Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'];
+        
+        // Array.prototype.filter()
+        const fifteen = inventors.filter(inventor => (inventor.year >= 1984 && inventor.year < 1988));
+        console.table(fifteen);
+    </script>
+</body>
+</html>
